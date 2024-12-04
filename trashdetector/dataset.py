@@ -72,7 +72,7 @@ class Taco(utils.Dataset):
             )
         if return_taco:
             return taco_alla_coco
-
+##STILL A LOT OF CHECKING ;-;
     def load_image_with_proposals(self, image_id):  #tanihad
         """Load an image and generate Selective Search proposals."""
         image_path = self.image_info[image_id]['path']  #tanihad
