@@ -1,0 +1,1 @@
+Average Precision: 0.001 at IoU: 0.8499999999999999
