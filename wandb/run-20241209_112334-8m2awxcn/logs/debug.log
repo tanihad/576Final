@@ -1,0 +1,25 @@
+2024-12-09 11:23:34,013 INFO    MainThread:53718 [wandb_setup.py:_flush():68] Current SDK version is 0.19.0
+2024-12-09 11:23:34,014 INFO    MainThread:53718 [wandb_setup.py:_flush():68] Configure stats pid to 53718
+2024-12-09 11:23:34,014 INFO    MainThread:53718 [wandb_setup.py:_flush():68] Loading settings from /Users/ak203/.config/wandb/settings
+2024-12-09 11:23:34,014 INFO    MainThread:53718 [wandb_setup.py:_flush():68] Loading settings from /Users/ak203/Documents/dlcv-proj/wandb/settings
+2024-12-09 11:23:34,014 INFO    MainThread:53718 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2024-12-09 11:23:34,014 INFO    MainThread:53718 [wandb_init.py:_log_setup():528] Logging user logs to /Users/ak203/Documents/dlcv-proj/wandb/run-20241209_112334-8m2awxcn/logs/debug.log
+2024-12-09 11:23:34,014 INFO    MainThread:53718 [wandb_init.py:_log_setup():529] Logging internal logs to /Users/ak203/Documents/dlcv-proj/wandb/run-20241209_112334-8m2awxcn/logs/debug-internal.log
+2024-12-09 11:23:34,014 INFO    MainThread:53718 [wandb_init.py:init():639] calling init triggers
+2024-12-09 11:23:34,014 INFO    MainThread:53718 [wandb_init.py:init():645] wandb.init called with sweep_config: {}
+config: {}
+2024-12-09 11:23:34,014 INFO    MainThread:53718 [wandb_init.py:init():688] starting backend
+2024-12-09 11:23:34,014 INFO    MainThread:53718 [wandb_init.py:init():692] sending inform_init request
+2024-12-09 11:23:34,028 INFO    MainThread:53718 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-12-09 11:23:34,029 INFO    MainThread:53718 [wandb_init.py:init():705] backend started and connected
+2024-12-09 11:23:34,030 INFO    MainThread:53718 [wandb_init.py:init():798] updated telemetry
+2024-12-09 11:23:34,031 INFO    MainThread:53718 [wandb_init.py:init():830] communicating run to backend with 90.0 second timeout
+2024-12-09 11:23:34,446 ERROR   MainThread:53718 [wandb_init.py:init():857] encountered error: failed to upsert bucket: returned error 403 Forbidden: {"errors":[{"message":"permission denied","path":["upsertBucket"],"extensions":{"code":"PERMISSION_ERROR"}}],"data":{"upsertBucket":null}}
+2024-12-09 11:23:34,446 ERROR   MainThread:53718 [wandb_init.py:init():1315] error in wandb.init()
+Traceback (most recent call last):
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1305, in init
+    return wi.init()
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 863, in init
+    raise error
+wandb.errors.errors.CommError: failed to upsert bucket: returned error 403 Forbidden: {"errors":[{"message":"permission denied","path":["upsertBucket"],"extensions":{"code":"PERMISSION_ERROR"}}],"data":{"upsertBucket":null}}
+2024-12-09 11:23:34,450 WARNING MsgRouterThr:53718 [router.py:message_loop():75] message_loop has been closed

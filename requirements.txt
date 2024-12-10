@@ -1,0 +1,14 @@
+pillow
+requests
+jupyter
+numpy
+pandas
+matplotlib
+seaborn
+graphviz
+Cython
+chardet
+wandb
+opencv-python
+selective-search
+albumentations

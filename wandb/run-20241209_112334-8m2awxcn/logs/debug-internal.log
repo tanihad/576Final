@@ -1,0 +1,18 @@
+{"time":"2024-12-09T11:23:34.030556-06:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-09T11:23:34.030587-06:00","level":"INFO","msg":"created symlink","path":"/Users/ak203/Documents/dlcv-proj/wandb/run-20241209_112334-8m2awxcn/logs/debug-core.log"}
+{"time":"2024-12-09T11:23:34.339434-06:00","level":"INFO","msg":"created new stream","id":"8m2awxcn"}
+{"time":"2024-12-09T11:23:34.339543-06:00","level":"INFO","msg":"stream: started","id":"8m2awxcn"}
+{"time":"2024-12-09T11:23:34.339639-06:00","level":"INFO","msg":"handler: started","stream_id":"8m2awxcn"}
+{"time":"2024-12-09T11:23:34.339652-06:00","level":"INFO","msg":"sender: started","stream_id":"8m2awxcn"}
+{"time":"2024-12-09T11:23:34.339652-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"8m2awxcn"}
+{"time":"2024-12-09T11:23:34.445459-06:00","level":"ERROR","msg":"HTTP error","status":403,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2024-12-09T11:23:34.445537-06:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: returned error 403 Forbidden: {\"errors\":[{\"message\":\"permission denied\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2024-12-09T11:23:34.450845-06:00","level":"INFO","msg":"stream: closing","id":"8m2awxcn"}
+{"time":"2024-12-09T11:23:34.45154-06:00","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2024-12-09T11:23:34.545822-06:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2024-12-09T11:23:34.545884-06:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404 Not Found: {\"errors\":[{\"message\":\"run rcnn/8m2awxcn not found during createRunFiles\",\"path\":[\"createRunFiles\"]}],\"data\":{\"createRunFiles\":null}}"}
+{"time":"2024-12-09T11:23:34.546268-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-09T11:23:34.546323-06:00","level":"INFO","msg":"handler: closed","stream_id":"8m2awxcn"}
+{"time":"2024-12-09T11:23:34.546332-06:00","level":"INFO","msg":"sender: closed","stream_id":"8m2awxcn"}
+{"time":"2024-12-09T11:23:34.546326-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"8m2awxcn"}
+{"time":"2024-12-09T11:23:34.546402-06:00","level":"INFO","msg":"stream: closed","id":"8m2awxcn"}

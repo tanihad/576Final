@@ -1,0 +1,41 @@
+{
+  "os": "macOS-14.7.1-arm64-arm-64bit",
+  "python": "CPython 3.10.15",
+  "startedAt": "2024-12-09T18:33:36.518847Z",
+  "program": "/Users/ak203/Documents/dlcv-proj/train.py",
+  "codePath": "train.py",
+  "email": "ak203@rice.edu",
+  "root": "/Users/ak203/Documents/dlcv-proj",
+  "host": "QFK7RT7GJJ",
+  "username": "ak203",
+  "executable": "/Users/ak203/anaconda3/envs/trash/bin/python",
+  "codePathLocal": "train.py",
+  "cpu_count": 12,
+  "cpu_count_logical": 12,
+  "disk": {
+    "/": {
+      "total": "994662584320",
+      "used": "409577656320"
+    },
+    "/System/Volumes/Data": {
+      "total": "994662584320",
+      "used": "409577656320"
+    }
+  },
+  "memory": {
+    "total": "17179869184"
+  },
+  "cpu": {
+    "count": 12,
+    "countLogical": 12
+  },
+  "apple": {
+    "name": "Apple M2 Pro",
+    "ecpuCores": 4,
+    "pcpuCores": 8,
+    "gpuCores": 19,
+    "memoryGb": 16,
+    "swapTotalBytes": "1073741824",
+    "ramTotalBytes": "17179869184"
+  }
+}

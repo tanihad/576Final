@@ -1,0 +1,74 @@
+[DB INFO] train len=1200
+[DB INFO] val len=150
+[DB INFO] mode=fast
+[MODEL INFO] Architecture: resnet18
+[MODEL INFO] Bbox head: False
+[MODEL INFO] Freeze backbone: False
+[MODEL INFO] Extra layers: False
+[MODEL INFO] Trainable parameters: 11.19M
+[INFO] Optim=SGD
+[INFO] lr=1e-05
+[INFO] batch size=16
+[INFO] weight decay=0
+[INFO] save_path=./model'/detector/optim_SGD_lr_1e-05_b_16_wd_0_arch_resnet18_mode_fast
+Epoch 1/50:  87%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                | 1045/1200 [25:59<03:51,  1.49s/it]
+Traceback (most recent call last):
+  File "/Users/ak203/Documents/dlcv-proj/train.py", line 174, in <module>
+    y_clf = model(proposals)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/ak203/Documents/dlcv-proj/model/rcnn.py", line 79, in forward
+    x = self.layer1(x)   # 1/4, 256
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torchvision/models/resnet.py", line 92, in forward
+    out = self.conv1(x)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/ak203/Documents/dlcv-proj/train.py", line 174, in <module>
+    y_clf = model(proposals)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/ak203/Documents/dlcv-proj/model/rcnn.py", line 79, in forward
+    x = self.layer1(x)   # 1/4, 256
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torchvision/models/resnet.py", line 92, in forward
+    out = self.conv1(x)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+KeyboardInterrupt

@@ -1,0 +1,50 @@
+[DB INFO] train len=1200
+[DB INFO] val len=150
+[DB INFO] mode=fast
+[MODEL INFO] Architecture: resnet18
+[MODEL INFO] Bbox head: False
+[MODEL INFO] Freeze backbone: False
+[MODEL INFO] Extra layers: False
+[MODEL INFO] Trainable parameters: 11.19M
+[INFO] Optim=SGD
+[INFO] lr=1e-05
+[INFO] batch size=16
+[INFO] weight decay=0
+[INFO] save_path=./model'/detector/optim_SGD_lr_1e-05_b_16_wd_0_arch_resnet18_mode_fast
+Epoch 1/50:   0%|                                                                                                                                                   | 0/1200 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/ak203/Documents/dlcv-proj/train.py", line 147, in <module>
+    for data in tqdm(train_loader, total=len(train_loader), desc=f'Epoch {e+1}/{epochs}'):
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/ak203/Documents/dlcv-proj/datasets/taco_detection.py", line 86, in __getitem__
+    proposal_labels = np.load(os.path.join(self.proposals_labels_dir, f'labels_proposals_img_{img_id}.npy'))
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/numpy/lib/npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: './data/TACO/object_proposals_fast/train_labels/labels_proposals_img_591.npy'
+Traceback (most recent call last):
+  File "/Users/ak203/Documents/dlcv-proj/train.py", line 147, in <module>
+    for data in tqdm(train_loader, total=len(train_loader), desc=f'Epoch {e+1}/{epochs}'):
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/ak203/Documents/dlcv-proj/datasets/taco_detection.py", line 86, in __getitem__
+    proposal_labels = np.load(os.path.join(self.proposals_labels_dir, f'labels_proposals_img_{img_id}.npy'))
+  File "/Users/ak203/anaconda3/envs/trash/lib/python3.10/site-packages/numpy/lib/npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: './data/TACO/object_proposals_fast/train_labels/labels_proposals_img_591.npy'

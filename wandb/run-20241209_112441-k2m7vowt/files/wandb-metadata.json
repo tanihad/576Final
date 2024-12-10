@@ -1,0 +1,13 @@
+{
+  "os": "macOS-14.7.1-arm64-arm-64bit",
+  "python": "CPython 3.10.15",
+  "startedAt": "2024-12-09T17:24:41.167157Z",
+  "program": "/Users/ak203/Documents/dlcv-proj/train.py",
+  "codePath": "train.py",
+  "email": "ak203@rice.edu",
+  "root": "/Users/ak203/Documents/dlcv-proj",
+  "host": "QFK7RT7GJJ",
+  "username": "ak203",
+  "executable": "/Users/ak203/anaconda3/envs/trash/bin/python",
+  "codePathLocal": "train.py"
+}
